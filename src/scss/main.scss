@@ -1,0 +1,41 @@
+@import "partials/mixins";
+@import "partials/params";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body {
+    @include clear;
+    width: 100%;
+    color: $font-color;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.view-port {
+    width: $view-port;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    @include clear;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    background-color: $main-bg-color;
+}
